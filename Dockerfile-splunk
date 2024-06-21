@@ -4,10 +4,10 @@
 
 FROM dmuth1/splunk-lab
 
-RUN wget https://s3.amazonaws.com/dmuth-splunk-lab/nlp-text-analytics_102.tgz \
-        && tar xfvz nlp-text-analytics_102.tgz \
+COPY nlp-text-analytics_114.tgz nlp-text-analytics_114.tgz
+RUN tar xfvz nlp-text-analytics_114.tgz \
         && mv nlp-text-analytics /opt/splunk/etc/apps/ \
-        && rm -fv /tmp/nlp-text-analytics_102.tgz 
+        && rm -fv /tmp/nlp-text-analytics_114.tgz
 
 #
 # Copy in our application

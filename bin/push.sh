@@ -17,8 +17,8 @@ echo "# "
 echo "# "
 echo "# Pushing containers to Docker Hub..."
 echo "# "
-docker push dmuth1/splunk-telegram-python
-docker push dmuth1/splunk-telegram
+docker push teh1337z/splunk-telegram-python
+docker push teh1337z/splunk-telegram
 
 echo "# Done!"
 

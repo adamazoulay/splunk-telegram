@@ -21,8 +21,8 @@ docker build . -f Dockerfile-splunk -t splunk-telegram
 echo "# "
 echo "# Tagging container..."
 echo "# "
-docker tag splunk-telegram-python dmuth1/splunk-telegram-python
-docker tag splunk-telegram dmuth1/splunk-telegram
+docker tag splunk-telegram-python teh1337z/splunk-telegram-python
+docker tag splunk-telegram teh1337z/splunk-telegram
 
 echo "# Done!"
 

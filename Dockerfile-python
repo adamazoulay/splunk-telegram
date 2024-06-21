@@ -5,11 +5,12 @@
 FROM alpine:latest
 
 RUN apk add bash python3
+RUN apk add --update py-pip
 
 RUN mkdir /app
 
 COPY requirements.txt /app
-RUN pip3 install -r /app/requirements.txt
+RUN pip3 install -r /app/requirements.txt --break-system-packages
 
 COPY bin/telegram-html-to-json.py /app
 COPY entrypoint.sh /
