@@ -98,7 +98,7 @@ def processFile(file):
 					#logger.info("No date found in row: {}".format(row))
 					continue
 
-				row["date"] = datetime.datetime.strptime(row["date"], 
+				row["date"] = datetime.datetime.strptime(row["date"][:19],
 					"%d.%m.%Y %H:%M:%S").strftime("%Y-%m-%dT%T.000")
 
 				print(json.dumps(row))
